@@ -104,10 +104,10 @@ function Create-BaseLine{
 }
 
 
-$baselineFilePath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\baselines1.csv" 
+$baselineFilePath="C:\Users\File Integrity\baselines1.csv" 
 
 Create-BaseLine -baselineFilePath $baselineFilePath
 
-Add-FileToBaseline -baselineFilePath $baselineFilePath -targetFilePath "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\Files\text1.txt"
+Add-FileToBaseline -baselineFilePath $baselineFilePath -targetFilePath "C:\Users\File Integrity\Files\text1.txt"
 
 Verify-Baseline -baselineFilePath $baselineFilePath
