@@ -1,8 +1,8 @@
- $baselineFilePath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\baselines.csv"
+ $baselineFilePath="C:\Users\File Integrity\baselines.csv"
 
 
 ##add a file to baseline.csv
-$fileToMonitorPath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\Files\text1.txt"
+$fileToMonitorPath="C:\Users\File Integrity\Files\text1.txt"
 $hash=Get-FileHash -Path $fileToMonitorPath
 
 "$($fileToMonitorPath),$($hash.hash)" | Out-File -FilePath $baselineFilePath -Append
@@ -23,11 +23,11 @@ foreach($file in $baselineFiles){
     else{
         Write-Output "$($file.path) is not found"
     }
-    $baselineFilePath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\baselines.csv"
+    $baselineFilePath="C:\Users\File Integrity\baselines.csv"
 }  
 
     ##add a file to baseline.csv
-    $fileToMonitorPath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\Files\text1.txt"
+    $fileToMonitorPath="C:\Users\File Integrity\Files\text1.txt"
     $hash=Get-FileHash -Path $fileToMonitorPath
     
     "$($fileToMonitorPath),$($hash.hash)" | Out-File -FilePath $baselineFilePath -Append
