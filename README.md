@@ -14,3 +14,4 @@ The purpose of this Project is to detect unauthorized changes to critical files 
 3. Use any powershell Extension if you are using VS code.
 4. First Load the program to the powerShell.
 5. Then run the program.
+   
