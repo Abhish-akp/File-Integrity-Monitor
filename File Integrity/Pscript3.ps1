@@ -1,11 +1,11 @@
-Import-Module "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\Mail.psm1"
+Import-Module "C:\UsersFile Integrity\Mail.psm1"
 
 $Creds=Get-Credential
-$Creds | Export-Clixml -Path "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\EmailCred.xml"
+$Creds | Export-Clixml -Path "C:\Users\File Integrity\EmailCred.xml"
 
 
 
-$EmailCredentialsPath = "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\New folder\EmailCred.xml"
+$EmailCredentialsPath = "C:\Users\File Integrity\EmailCred.xml"
 $EmailCredentials = Import-Clixml -Path $EmailCredentialsPath
 $EmailServer="smtp-mail.outlook.com"
 $EmailPort="587"
@@ -126,7 +126,7 @@ function Create-BaseLine{
 }
 
 
-$baselineFilePath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\New folder\baselines1.csv" 
+$baselineFilePath="C:\Users\File Integrity\baselines1.csv" 
 
 Write-Output "File Monitor System Vers 1.00"-ForegroundColor Green
  do{
@@ -176,6 +176,6 @@ Write-Output "File Monitor System Vers 1.00"-ForegroundColor Green
  }while($entry -notin @('q','quit'))
 
 #Create-BaseLine -baselineFilePath $baselineFilePath
-# Add-FileToBaseLine -baselineFilePath $baselineFilePath -targetFilePath "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\New folder\Files\text1.txt"
+# Add-FileToBaseLine -baselineFilePath $baselineFilePath -targetFilePath "C:\Users\File Integrity\\Files\text1.txt"
 
 # Verify-BaseLine -baselineFilePath $baselineFilePath -emailTo "anjal2@outlook.com"
