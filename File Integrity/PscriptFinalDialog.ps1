@@ -1,7 +1,7 @@
-Import-Module "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\New folder\Mail.psm1"
+Import-Module "C:\Users\File Integrity\Mail.psm1"
 Add-Type -AssemblyName System.Windows.Forms
 
-$EmailCredentialsPath = "C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\New folder\EmailCred.xml"
+$EmailCredentialsPath = "C:\Users\File Integrity\EmailCred.xml"
 $EmailCredentials = Import-Clixml -Path $EmailCredentialsPath
 $EmailServer="smtp-mail.outlook.com"
 $EmailPort="587"
@@ -122,7 +122,7 @@ function Create-BaseLine{
 }
 
 
-$baselineFilePath="C:\Users\Anjali Prajapati\OneDrive\Desktop\File Integrity\New folder\baselines1.csv" 
+$baselineFilePath="C:\Users\File Integrity\baselines1.csv" 
 
 Write-Output "File Monitor System Vers 1.00"-ForegroundColor Green
  do{
